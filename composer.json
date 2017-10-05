@@ -1,0 +1,29 @@
+{
+    "name": "nuewave/laravel-unified-responder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nuewave",
+            "email": "friends@nuewave.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nuewave\\UnifiedResponder\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "Illuminate/Support": "~5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nuewave\\UnifiedResponder\\UnifiedResponderServiceProvider"
+            ],
+            "aliases": {
+                "UnifiedResponder": "Nuewave\\UnifiedResponder\\Facades\\UnifiedResponder"
+            }
+        }
+    }
+}
